@@ -3,17 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Collectible
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Character
+  - Background
   - Water
   - UI
   - Ground
-  - Background
-  - 
+  - Character
+  - Pause
   - 
   - 
   - 
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 1100306357
+    locked: 0
+  - name: Pause
+    uniqueID: 774740629
     locked: 0
