@@ -1,20 +1,24 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
-    public Button startButton;
+    // Otros métodos y configuraciones del menú principal...
 
-    private void Start()
+    public void OnExitButtonPressed()
     {
-        // Asociar la función OnStartButtonClick al evento de clic del botón
-        startButton.onClick.AddListener(OnStartButtonClick);
+        // Salir del juego
+        Application.Quit();
+
+        // Esto solo se ejecutará en el Editor de Unity para simular la salida del juego
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 
-    private void OnStartButtonClick()
+    public void OnStartGameButtonPressed()
     {
-        // Cargar la escena del nivel 1
+        // Iniciar el juego, puedes cargar la primera escena del juego aquí
         SceneManager.LoadScene("Level_1");
     }
 }

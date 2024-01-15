@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip backgroundMusic; // Asigna la música en el Inspector
     public AudioClip victoryMusic; // Nueva: Asigna la música de victoria en el Inspector
     private AudioSource musicSource;
+    internal static object instance;
 
     private void Start()
     {

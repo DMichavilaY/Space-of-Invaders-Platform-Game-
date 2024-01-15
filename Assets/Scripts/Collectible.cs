@@ -23,7 +23,7 @@ public class Collectible : MonoBehaviour
         }
     }
 
-    private void Collect()
+    public void Collect()
     {
         if (collectSound != null)
         {
